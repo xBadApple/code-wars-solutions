@@ -1,0 +1,27 @@
+Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
+
+Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
+
+Resposta:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class Kata
+{
+  public static int CountBits(int n)
+  {
+    List<int> list = new List<int>();
+    
+    for(int i=n; i>=0 ; i=i/2)
+    {
+      list.Add(i%2);
+      if(i == 0) break;
+    }
+    
+    list.Reverse();
+    
+    return list.Sum();
+  } 
+}

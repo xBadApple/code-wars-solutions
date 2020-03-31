@@ -1,0 +1,31 @@
+We need to sum big numbers and we require your help.
+
+Write a function that returns the sum of two numbers. The input numbers are strings and the function must return a string.
+
+Example
+add("123", "321"); -> "444"
+add("11", "99");   -> "110"
+Notes
+The input numbers are big.
+The input is a string of only digits
+The numbers are positives
+
+Resposta:
+
+function add(a, b) {
+  let count = 0;
+  let higher = (a.length>b.length) ? a.length : b.length
+  let result = []
+  let aux = 0
+  while(count < higher)
+  {
+    count++
+    rA = (a[a.length-count] == undefined) ? 0 : a[a.length-count]
+    rB = (b[b.length-count] == undefined) ? 0 : b[b.length-count]
+    let x = parseInt(rA)+parseInt(rB)+aux
+    result.unshift(x%10)
+    aux = (x > 9) ? 1 : 0
+  }
+  if(aux == 1) result.unshift(1)
+  return result.join('')
+}
