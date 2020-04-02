@@ -1,0 +1,11 @@
+The code gives an error!
+
+Kata.A = 123.ToSTring();
+Fix it!
+
+Resposta:
+
+public class Kata
+{
+  public static string A =  123.ToString();
+}
