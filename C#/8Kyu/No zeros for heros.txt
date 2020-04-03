@@ -1,0 +1,26 @@
+Numbers ending with zeros are boring.
+
+They might be fun in your world, but not here.
+
+Get rid of them. Only the ending ones.
+
+1450 -> 145
+960000 -> 96
+1050 -> 105
+-1050 -> -105
+Zero alone is fine, don't worry about it. Poor guy anyway
+
+Resposta:
+
+public class NoBoring 
+{
+    public static int NoBoringZeros(int n) 
+    {
+      string aux = n.ToString();
+      while(aux[aux.Length-1] == '0' && aux.Length > 1)
+      {
+        aux = aux.Substring(0,aux.Length-1);
+      }
+      return int.Parse(aux);
+    }
+}
