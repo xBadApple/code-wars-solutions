@@ -6,7 +6,7 @@ Repositório onde eu salvo cópias dos desafios que eu completei no CodeWars htt
 
 ## Oque é CodeWars?
 
-CodeWars é um site aonde você encara desafios e é nivelado por quão bom você é.
+CodeWars é um site aonde você encara desafios e é nivelado a partir do sistema de "Katas"
 O site site oferece desafios em várias linguagens de programação, tem até SQL!
 
 
